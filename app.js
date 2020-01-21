@@ -6,7 +6,7 @@ const Vision = require("@hapi/vision");
 const Path = require("path");
 
 const server = Hapi.server({
-  port: 3000,
+  port: require("./config").http,
   host: "localhost",
   routes: {
     files: {
